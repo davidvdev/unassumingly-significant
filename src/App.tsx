@@ -9,7 +9,7 @@ import Modal from '../Components/Modal/Modal'
 function App() {
 
   const [modalOpen, setModalOpen] = useState(false)
-  const [modalTarget, setModalTarget] = useState(null)
+  const [modalTarget, setModalTarget] = useState({name: ""})
 
   const options = [
     { name: "Object" },
