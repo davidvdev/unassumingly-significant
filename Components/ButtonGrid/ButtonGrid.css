@@ -1,0 +1,13 @@
+.ButtonGrid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+
+.option {
+    width: 120px;
+    height: 240px;
+    padding: 1em;
+}
