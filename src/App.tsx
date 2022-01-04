@@ -1,16 +1,22 @@
 // Imports
+import { useState } from 'react'
 import './App.css'
 
 // Components
 import ButtonGrid from '../Components/ButtonGrid/ButtonGrid'
+import Modal from '../Components/Modal/Modal'
 
 function App() {
 
+  const [modalOpen, setModalOpen] = useState(false)
+
   const options = [
-    { name: "test-1" },
-    { name: "test-2" },
-    { name: "test-3" },
-    { name: "test-4" },
+    { name: "Object" },
+    { name: "NPC" },
+    { name: "Decoration" },
+    { name: "Building" },
+    { name: "Markings" },
+    { name: "Strange Sigil" },
 ]
 
   return (
@@ -18,7 +24,10 @@ function App() {
       <header>
         <h1>Unassumingly Significant</h1>
       </header>
-      <ButtonGrid options={options}/>
+      <ButtonGrid options={options} onClick={setModalOpen}/>
+      { modalOpen &&
+        <Modal setModalOpen={setModalOpen}/>
+      }
     </div>
   )
 }
