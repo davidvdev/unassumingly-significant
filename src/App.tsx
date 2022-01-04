@@ -9,6 +9,7 @@ import Modal from '../Components/Modal/Modal'
 function App() {
 
   const [modalOpen, setModalOpen] = useState(false)
+  const [modalTarget, setModalTarget] = useState(null)
 
   const options = [
     { name: "Object" },
@@ -17,17 +18,22 @@ function App() {
     { name: "Building" },
     { name: "Markings" },
     { name: "Strange Sigil" },
-]
+  ]
+
+  const openSpecificModal = (item:any) => {
+    setModalOpen(true)
+    setModalTarget(item)
+  }
 
   return (
     <div className="App">
       <header>
         <h1>Unassumingly Significant</h1>
       </header>
-      <ButtonGrid options={options} onClick={setModalOpen}/>
       { modalOpen &&
-        <Modal setModalOpen={setModalOpen}/>
+        <Modal setModalOpen={setModalOpen} data={modalTarget}/>
       }
+      <ButtonGrid options={options} onClick={openSpecificModal}/>
     </div>
   )
 }
