@@ -1,0 +1,8 @@
+[
+    { "name": "Object" },
+    { "name": "NPC" },
+    { "name": "Decoration" },
+    { "name": "Building" },
+    { "name": "Markings" },
+    { "name": "Strange Sigil" }
+]

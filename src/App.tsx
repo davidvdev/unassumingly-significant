@@ -6,19 +6,13 @@ import './App.css'
 import ButtonGrid from '../Components/ButtonGrid/ButtonGrid'
 import Modal from '../Components/Modal/Modal'
 
+// Data
+import options from '../data/options.json'
+
 function App() {
 
   const [modalOpen, setModalOpen] = useState(false)
   const [modalTarget, setModalTarget] = useState({name: ""})
-
-  const options = [
-    { name: "Object" },
-    { name: "NPC" },
-    { name: "Decoration" },
-    { name: "Building" },
-    { name: "Markings" },
-    { name: "Strange Sigil" },
-  ]
 
   const openSpecificModal = (item:any) => {
     setModalOpen(true)
