@@ -1,6 +1,6 @@
 [
-    { "name": "Object" },
-    { "name": "NPC" },
+    { "name": "Containers" },
+    { "name": "Human" },
     { "name": "Decoration" },
     { "name": "Building" },
     { "name": "Markings" },

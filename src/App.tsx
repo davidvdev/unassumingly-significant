@@ -8,15 +8,31 @@ import Modal from '../Components/Modal/Modal'
 
 // Data
 import options from '../json/options.json'
+import containers from '../json/containers.json'
+
+// Types
+type Data = {
+  options: any
+  containers: any
+  item: string
+}
+type DataKey = keyof Data
 
 function App() {
+
+  const data = { 
+    options: options, 
+    containers: containers
+  }
+
+
 
   const [modalOpen, setModalOpen] = useState(false)
   const [modalTarget, setModalTarget] = useState({name: ""})
 
-  const openSpecificModal = (item:any) => {
+  const openSpecificModal = (item: DataKey) => {
     setModalOpen(true)
-    setModalTarget(item)
+    setModalTarget(data[item])
   }
 
   return (
