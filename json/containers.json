@@ -1,6 +1,6 @@
 {
     "name":"Containers",
-    "quantity": ["several", "a pile of", "a dozen", "one or two"],
+    "quantity": ["several", "piles of", "a dozen", "one or two"],
     "type": ["crates", "boxes", "tubes", "cartons", "cannisters", "drums", "buckets", "caskets", "barrels"],
     "description": ["old", "worn", "broken", "new", "imported", "foreign", "out of place", "nondescript", "glowing", "humming", "secured", "dusty", "ancient", "charred"],
     "content":["books", "weapons", "medicine", "contraband", "artifacts", "food", "tools", "gems", "money", "nothing"]
