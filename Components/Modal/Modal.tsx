@@ -9,7 +9,7 @@ interface Props {
 
 const Modal = (props: Props) => {
     return(
-        <div className="Modal">
+        <div className="Modal" onClick={() => {props.setModalOpen(false)}}>
             <div className='content'>
                 <button onClick={() => {props.setModalOpen(false)}}>click to close</button>
                 <h1>Hello {props.data.name}</h1>

@@ -27,12 +27,12 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h1>Unassumingly Significant</h1>
-      </header>
       { modalOpen &&
         <Modal setModalOpen={setModalOpen} data={modalTarget}/>
       }
+      <header>
+        <h1>Unassumingly Significant</h1>
+      </header>
       <ButtonGrid options={options} onClick={openSpecificModal}/>
     </div>
   )
