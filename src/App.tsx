@@ -7,7 +7,7 @@ import ButtonGrid from '../Components/ButtonGrid/ButtonGrid'
 import Modal from '../Components/Modal/Modal'
 
 // Data
-import options from '../data/options.json'
+import options from '../json/options.json'
 
 function App() {
 
