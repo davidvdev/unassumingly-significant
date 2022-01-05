@@ -14,25 +14,33 @@ import containers from '../json/containers.json'
 type Data = {
   options: any
   containers: any
-  item: string
+  human: any
+  decoration: any
+  building: any
+  markings: any
+  sigils: any
 }
-type DataKey = keyof Data
 
 function App() {
 
-  const data = { 
+  const data: Data = { 
     options: options, 
-    containers: containers
+    containers: containers,
+    human: containers,
+    decoration: containers,
+    building: containers,
+    markings: containers,
+    sigils: containers
   }
-
 
 
   const [modalOpen, setModalOpen] = useState(false)
   const [modalTarget, setModalTarget] = useState({name: ""})
 
-  const openSpecificModal = (item: DataKey) => {
+  const openSpecificModal = (item: keyof Data) => {
+    console.log(item)
     setModalOpen(true)
-    setModalTarget(data[item])
+    setModalTarget(data[item][0])
   }
 
   return (
