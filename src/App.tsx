@@ -40,13 +40,13 @@ function App() {
   const openSpecificModal = (item: keyof Data) => {
     console.log(item)
     setModalOpen(true)
-    setModalTarget(data[item][0])
+    setModalTarget(data[item])
   }
 
   return (
     <div className="App">
       { modalOpen &&
-        <Modal setModalOpen={setModalOpen} data={modalTarget}/>
+        <Modal setModalOpen={setModalOpen} target={modalTarget}/>
       }
       <header>
         <h1>Unassumingly Significant</h1>

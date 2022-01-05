@@ -2,9 +2,7 @@ import './Modal.css'
 
 interface Props {
     setModalOpen: Function
-    data: {
-        name: string
-    }
+    target: any
 }
 
 const Modal = (props: Props) => {
@@ -15,12 +13,17 @@ const Modal = (props: Props) => {
         }
     }
 
+    const randomizer = (name: string) => {
+        console.log(name)
+    }
+
     return(
         // <div className="Modal" onClick={() => {props.setModalOpen(false)}}>
         <div className="Modal" onClick={(event) => {clickArea(event)}}>
             <div className='content'>
                 <button onClick={() => {props.setModalOpen(false)}}>click to close</button>
-                <h1>Hello {props.data.name}</h1>
+                <h1>The {props.target.name}</h1>
+                { randomizer(props.target.name) }
             </div>
         </div>
     )
