@@ -10,8 +10,6 @@ interface Props {
 
 const ButtonGrid = (props: Props) => {
 
-    console.log(props.images)
-
     const handleClick = (item: string) => {
         props.onClick(item.toLowerCase())
     }
