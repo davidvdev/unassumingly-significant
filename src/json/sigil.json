@@ -1,0 +1,9 @@
+{
+    "name": "Sigils",
+    "emotion": ["comforting", "ominous", "familiar", "revered", "frightening", "maddening", "confusing", "perplexing", "unknown"],
+    "group": ["government", "army", "faction", "gang", "rebels", "cult", "merchants", "traders", "monsters", "travelers", "religion"],
+    "shape" : ["circle", "square", "triangle", "octagon", "hexagon"],
+    "action": ["covered with", "surrounded by", "featuring", "crossed by", "obscuring"],
+    "quantity": ["several", "two", "a few", "hundreds of"],
+    "features": ["wings", "bones", "crosses", "thorns", "rays"]
+}

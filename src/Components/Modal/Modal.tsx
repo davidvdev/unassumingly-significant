@@ -78,6 +78,17 @@ const Modal = (props: Props) => {
                             </p>
                         </>
                     )
+                case "Sigils":
+                    return(
+                        <>
+                            <p>
+                                The symbol looks like a {randomizer(t.shape)} {randomizer(t.action)} {randomizer(t.quantity)} {randomizer(t.features)}.
+                            </p>
+                            <p>
+                                The {randomizer(t.emotion)} sigil seems to represent local {randomizer(t.group)}
+                            </p>
+                        </>
+                    )
                 
                 default:
                     return(<p>Coming Soon!</p>)

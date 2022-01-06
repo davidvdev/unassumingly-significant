@@ -13,6 +13,7 @@ import human from './json/human.json'
 import decoration from './json/decoration.json'
 import building from './json/building.json'
 import markings from './json/markings.json'
+import sigils from './json/sigil.json'
 
 // Images
 import SVGcontainer from './images/container.svg'
@@ -51,7 +52,7 @@ function App() {
     decoration: decoration,
     building: building,
     markings: markings,
-    sigils: ""
+    sigils: sigils
   }
 
   const images: Images = {
