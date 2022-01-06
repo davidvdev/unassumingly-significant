@@ -48,6 +48,17 @@ const Modal = (props: Props) => {
                             </p>
                         </>
                     )
+                case "Decoration":
+                    return(
+                        <>
+                            <p>
+                                There is a {randomizer(t.type)} that {randomizer(t.location)}.
+                            </p>    
+                            <p>
+                                It appears to be made from {randomizer(t.material)} and looks {randomizer(t.value)}.
+                            </p>
+                        </>
+                    )
                 default:
                     return(<p>Coming Soon!</p>)
                 }

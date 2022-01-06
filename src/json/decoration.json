@@ -1,0 +1,7 @@
+{
+    "name": "Decoration",
+    "type": ["painting", "poster", "vase", "shadow box"],
+    "location": ["hangs on the wall", "sits on a pedestal", "resides in a display case", "rests on the ground", "has been cast aside"],
+    "material": ["wood", "metal", "stone", "fiber", "fabric"],
+    "value": ["cheap", "expensive", "priceless", "worthless"]
+}

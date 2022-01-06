@@ -10,6 +10,7 @@ import Modal from './Components/Modal/Modal'
 import options from './json/options.json'
 import containers from './json/containers.json'
 import human from './json/human.json'
+import decoration from './json/decoration.json'
 
 // Images
 import SVGcontainer from './images/container.svg'
@@ -45,7 +46,7 @@ function App() {
     options: options, 
     containers: containers,
     human: human,
-    decoration: "",
+    decoration: decoration,
     building: "",
     markings: "",
     sigils: ""
