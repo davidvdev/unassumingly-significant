@@ -48,7 +48,7 @@ const Modal = (props: Props) => {
         <div className="Modal" onClick={(event) => {clickArea(event)}}>
             <div className='content'>
                 <button onClick={() => {props.setModalOpen(false)}}>click to close</button>
-                <h1>The {t.name}</h1>
+                <h1>{t.name}</h1>
                 <div className="icon" onClick={() => setText(textGen(t.name))}>
                     <img src={props.svg}/>
                     <small>click to reroll</small>
