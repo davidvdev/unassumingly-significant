@@ -28,23 +28,28 @@ const Modal = (props: Props) => {
             switch (name) {
                 case "Containers":
                     return(
-                        <div>
-                        <p>
-                            There are {randomizer(t.quantity)} {randomizer(t.description)} {randomizer(t.type)} nearby.
-                        </p>    
-                        <p>
-                            They contain {randomizer(t.content)}.
-                        </p>
-                        </div>
+                        <>
+                            <p>
+                                There are {randomizer(t.quantity)} {randomizer(t.description)} {randomizer(t.type)} nearby.
+                            </p>    
+                            <p>
+                                They contain {randomizer(t.content)}.
+                            </p>
+                        </>
+                    )
+                case "Human":
+                    return(
+                        <>
+                            <p>
+                                The {randomizer(t.age)} {randomizer(t.gender)} individual is {randomizer(t.attention)}.
+                            </p>    
+                            <p>
+                                They seem quite {randomizer(t.attitude)}.
+                            </p>
+                        </>
                     )
                 default:
-                    return(
-                        <div>
-                            <p>
-                                Coming Soon!
-                            </p>
-                        </div>
-                    )
+                    return(<p>Coming Soon!</p>)
                 }
             }
             
@@ -59,7 +64,7 @@ const Modal = (props: Props) => {
                     <img src={props.svg || ""} alt={t.name || "no image"}/>
                     <small>click to reroll</small>
                 </div>
-                { text }
+                <div className="text">{ text }</div>
             </div>
         </div>
     )

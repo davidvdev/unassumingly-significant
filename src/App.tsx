@@ -9,6 +9,7 @@ import Modal from './Components/Modal/Modal'
 // Data
 import options from './json/options.json'
 import containers from './json/containers.json'
+import human from './json/human.json'
 
 // Images
 import SVGcontainer from './images/container.svg'
@@ -17,13 +18,6 @@ import SVGdecoration from './images/decoration.svg'
 import SVGbuilding from './images/building.svg'
 import SVGmarkings from './images/markings.svg'
 import SVGsigil from './images/sigil.svg'
-
-// const SVGcontainer = require('./images/container.svg')
-// const SVGhuman = require('./images/human.svg')
-// const SVGdecoration = require('./images/decoration.svg')
-// const SVGbuilding = require('./images/building.svg')
-// const SVGmarkings = require('./images/markings.svg')
-// const SVGsigil = require('./images/sigil.svg')
 
 // Types
 type Data = {
@@ -50,7 +44,7 @@ function App() {
   const data: Data = { 
     options: options, 
     containers: containers,
-    human: "",
+    human: human,
     decoration: "",
     building: "",
     markings: "",

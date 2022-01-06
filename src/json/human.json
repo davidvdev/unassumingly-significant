@@ -1,0 +1,7 @@
+{
+    "name": "Human",
+    "age": ["young", "old", "senior", "middle aged", "teenage", "ancient", "youthful", "ageless"],
+    "gender": ["nonconforming", "male", "female", "nonbinary"],
+    "attention": ["watching passerbys", "reading something", "absorbed in a book", "sleeping", "staring upward", "looking at you"],
+    "attitude": ["friendly", "passive aggressive", "indifferent", "hostile", "eager to help"]
+}
