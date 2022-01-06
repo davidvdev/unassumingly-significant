@@ -4,6 +4,7 @@ import './Modal.css'
 interface Props {
     setModalOpen: Function
     target: any
+    svg: any
 }
 
 const Modal = (props: Props) => {
@@ -44,16 +45,12 @@ const Modal = (props: Props) => {
     const [text, setText] = useState(textGen(t.name))
 
     return(
-        // <div className="Modal" onClick={() => {props.setModalOpen(false)}}>
         <div className="Modal" onClick={(event) => {clickArea(event)}}>
             <div className='content'>
                 <button onClick={() => {props.setModalOpen(false)}}>click to close</button>
                 <h1>The {t.name}</h1>
                 <div className="icon" onClick={() => setText(textGen(t.name))}>
-                    {/* replace SVG tags with Icons */}
-                    <svg viewBox="0 0 100 100" >
-                        <circle cx="50" cy="50" r="25"/>
-                    </svg>
+                    <img src={props.svg}/>
                     <small>click to reroll</small>
                 </div>
                 { text }

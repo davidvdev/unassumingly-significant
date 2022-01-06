@@ -1,3 +1,16 @@
+/* CSS HEX */
+:root {
+  --light-gray: #ced7d5ff;
+  --platinum: #e2e9e7ff;
+  --cultured: #f3f7f5ff;
+  --platinum-2: #e8edeaff;
+  --ash-gray: #c0c5beff;
+}
+
+html {
+  background-color: var(--ow);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

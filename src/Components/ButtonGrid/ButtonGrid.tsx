@@ -5,9 +5,12 @@ interface Props {
         name: string
     }>
     onClick: Function
+    images: any
 }
 
 const ButtonGrid = (props: Props) => {
+
+    console.log(props.images)
 
     const handleClick = (item: string) => {
         props.onClick(item.toLowerCase())
@@ -18,10 +21,7 @@ const ButtonGrid = (props: Props) => {
             {props.options.map((item,index) => {
                 return(
                     <div className="option" key={index} onClick={() => handleClick(item.name)}>
-                        {/* replace SVG tags with Icons */}
-                        <svg viewBox="0 0 100 100" >
-                            <circle cx="50" cy="50" r="50"/>
-                        </svg>
+                        <img src={props.images[item.name.toLowerCase()]}/>
                         <h4>{item.name}</h4>
                     </div>
                 )
