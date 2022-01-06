@@ -3,12 +3,12 @@ import { useState } from 'react'
 import './App.css'
 
 // Components
-import ButtonGrid from '../Components/ButtonGrid/ButtonGrid'
-import Modal from '../Components/Modal/Modal'
+import ButtonGrid from './Components/ButtonGrid/ButtonGrid'
+import Modal from './Components/Modal/Modal'
 
 // Data
-import options from '../json/options.json'
-import containers from '../json/containers.json'
+import options from './json/options.json'
+import containers from './json/containers.json'
 
 // Types
 type Data = {
