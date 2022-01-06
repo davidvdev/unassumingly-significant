@@ -12,6 +12,7 @@ import containers from './json/containers.json'
 import human from './json/human.json'
 import decoration from './json/decoration.json'
 import building from './json/building.json'
+import markings from './json/markings.json'
 
 // Images
 import SVGcontainer from './images/container.svg'
@@ -49,7 +50,7 @@ function App() {
     human: human,
     decoration: decoration,
     building: building,
-    markings: "",
+    markings: markings,
     sigils: ""
   }
 

@@ -67,6 +67,18 @@ const Modal = (props: Props) => {
                             </p>
                         </>
                     )
+                case "Markings":
+                    return(
+                        <>
+                            <p>
+                                There are {randomizer(t.quantity)} {randomizer(t.type)} appearing {randomizer(t.order)}.
+                            </p>
+                            <p>
+                                The markings are {randomizer(t.appearance)} and seem to be {randomizer(t.meaning)}.
+                            </p>
+                        </>
+                    )
+                
                 default:
                     return(<p>Coming Soon!</p>)
                 }

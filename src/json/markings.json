@@ -1,0 +1,8 @@
+{
+    "name" : "Markings",
+    "quantity" : ["several", "a few", "very few"],
+    "type": ["runes", "scratches", "letters", "carvings", "words", "hieroglyphs"],
+    "order" : ["inline", "jumbled", "reversed", "inscruitable"],
+    "appearance": ["shimmering", "dull", "faint", "bold", "glowing", "humming", "illegible"],
+    "meaning": ["unknown", "a lost tale", "a warning", "a blessing", "a curse", "instructions", "a dedication to someone"]
+}
