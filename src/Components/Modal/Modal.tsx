@@ -59,6 +59,14 @@ const Modal = (props: Props) => {
                             </p>
                         </>
                     )
+                case "Building":
+                    return(
+                        <>
+                            <p>
+                                There is a {randomizer(t.size)} {randomizer(t.type)} nearby. There is {randomizer(t.activity)} activity.
+                            </p>
+                        </>
+                    )
                 default:
                     return(<p>Coming Soon!</p>)
                 }

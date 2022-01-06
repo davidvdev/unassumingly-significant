@@ -1,0 +1,6 @@
+{
+    "name": "Building",
+    "size": ["small", "large", "medium-sized"],
+    "type": ["house", "shop", "restaurant", "bar", "chapel"],
+    "activity": ["bustling", "moderate", "almost no"]
+}

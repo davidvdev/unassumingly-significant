@@ -11,6 +11,7 @@ import options from './json/options.json'
 import containers from './json/containers.json'
 import human from './json/human.json'
 import decoration from './json/decoration.json'
+import building from './json/building.json'
 
 // Images
 import SVGcontainer from './images/container.svg'
@@ -47,7 +48,7 @@ function App() {
     containers: containers,
     human: human,
     decoration: decoration,
-    building: "",
+    building: building,
     markings: "",
     sigils: ""
   }
