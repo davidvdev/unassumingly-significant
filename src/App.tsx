@@ -70,10 +70,11 @@ function App() {
   const [modalTarget, setModalTarget] = useState(data.containers)
   const [targetSVG, setTargetSVG] = useState(images.containers)
 
-  const openSpecificModal = (item: keyof Data) => {
+  const openSpecificModal = (item: keyof Data & keyof Images) => {
     console.log(item)
     setModalOpen(true)
     setModalTarget(data[item])
+    setTargetSVG(images[item])
   }
 
   return (
