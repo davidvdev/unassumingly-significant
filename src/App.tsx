@@ -50,11 +50,11 @@ function App() {
   const data: Data = { 
     options: options, 
     containers: containers,
-    human: containers,
-    decoration: containers,
-    building: containers,
-    markings: containers,
-    sigils: containers
+    human: "",
+    decoration: "",
+    building: "",
+    markings: "",
+    sigils: ""
   }
 
   const images: Images = {
@@ -71,7 +71,6 @@ function App() {
   const [targetSVG, setTargetSVG] = useState(images.containers)
 
   const openSpecificModal = (item: keyof Data & keyof Images) => {
-    console.log(item)
     setModalOpen(true)
     setModalTarget(data[item])
     setTargetSVG(images[item])

@@ -35,10 +35,16 @@ const Modal = (props: Props) => {
                         <p>
                             They contain {randomizer(t.content)}.
                         </p>
-                    </div>
-                )
+                        </div>
+                    )
                 default:
-                    break;
+                    return(
+                        <div>
+                            <p>
+                                Coming Soon!
+                            </p>
+                        </div>
+                    )
                 }
             }
             
@@ -48,9 +54,9 @@ const Modal = (props: Props) => {
         <div className="Modal" onClick={(event) => {clickArea(event)}}>
             <div className='content'>
                 <button onClick={() => {props.setModalOpen(false)}}>click to close</button>
-                <h1>{t.name}</h1>
-                <div className="icon" onClick={() => setText(textGen(t.name))}>
-                    <img src={props.svg}/>
+                <h1>{t.name || "Coming Soon"}</h1>
+                <div className="icon" onClick={() => setText(textGen(t.name || ""))}>
+                    <img src={props.svg || ""} alt={t.name || "no image"}/>
                     <small>click to reroll</small>
                 </div>
                 { text }
