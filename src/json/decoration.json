@@ -1,7 +1,39 @@
 {
     "name": "Decoration",
-    "type": ["painting", "poster", "vase", "shadow box"],
-    "location": ["hangs on the wall", "sits on a pedestal", "resides in a display case", "rests on the ground", "has been cast aside"],
-    "material": ["wood", "metal", "stone", "fiber", "fabric"],
-    "value": ["cheap", "expensive", "priceless", "worthless"]
+    "type": [
+        "painting",
+        "poster",
+        "vase",
+        "shadow box",
+        "statue",
+        "statuette",
+        "sculpture",
+        "tapestrie"
+    ],
+    "location": [
+        "hangs on the wall",
+        "sits on a pedestal",
+        "resides in a display case",
+        "rests on the ground",
+        "has been cast aside"
+    ],
+    "material": [
+        "ceramic",
+        "fabric",
+        "fiber",
+        "precious stones",
+        "metal",
+        "rare metal",
+        "stone",
+        "wood",
+        "woven plants"
+    ],
+    "value": [
+        "belongs to someone",
+        "cheap",
+        "expensive",
+        "priceless",
+        "worthless",
+        "worth something to someone"
+    ]
 }

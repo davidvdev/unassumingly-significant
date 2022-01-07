@@ -1,8 +1,51 @@
 {
     "name" : "Markings",
-    "quantity" : ["several", "a few", "very few"],
-    "type": ["runes", "scratches", "letters", "carvings", "words", "hieroglyphs"],
-    "order" : ["inline", "jumbled", "reversed", "inscruitable"],
-    "appearance": ["shimmering", "dull", "faint", "bold", "glowing", "humming", "illegible"],
-    "meaning": ["unknown", "a lost tale", "a warning", "a blessing", "a curse", "instructions", "a dedication to someone"]
+    "quantity" : [
+        "several",
+        "a few",
+        "very few"
+    ],
+    "type": [
+        "carvings",
+        "calligraphy",
+        "hieroglyphs",
+        "insriptions",
+        "illustrations",
+        "letters",
+        "runes",
+        "scratches",
+        "words",
+        "writings"
+    ],
+    "order" : [
+        "inline",
+        "jumbled",
+        "reversed",
+        "inscruitable",
+        "spiraling"
+    ],
+    "appearance": [
+        "carefully made",
+        "bold",
+        "dull",
+        "faint",
+        "glowing",
+        "hastily made",
+        "humming",
+        "illegible",
+        "shimmering",
+        "tiny"
+    ],
+    "meaning": [
+        "a blessing",
+        "a curse",
+        "a dedication to someone",
+        "a lost tale",
+        "a mark of ownership",
+        "a promise",
+        "a reminder",
+        "a warning",
+        "instructions",
+        "unknown"
+    ]
 }
