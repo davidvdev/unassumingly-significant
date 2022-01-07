@@ -11,3 +11,7 @@
     height: 240px;
     padding: 1em;
 }
+
+.option:hover {
+    cursor: pointer;
+}

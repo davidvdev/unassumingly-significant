@@ -18,6 +18,10 @@
     margin: 1em;
 }
 
+.icon:hover {
+    cursor: pointer;
+}
+
 small {
     display: block;
 }
