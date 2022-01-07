@@ -1,9 +1,76 @@
 {
     "name": "Sigils",
-    "emotion": ["comforting", "ominous", "familiar", "revered", "frightening", "maddening", "confusing", "perplexing", "unknown"],
-    "group": ["government", "army", "faction", "gang", "rebels", "cult", "merchants", "traders", "monsters", "travelers", "religion"],
-    "shape" : ["circle", "square", "triangle", "octagon", "hexagon"],
-    "action": ["covered with", "surrounded by", "featuring", "crossed by", "obscuring"],
-    "quantity": ["several", "two", "a few", "hundreds of"],
-    "features": ["wings", "bones", "crosses", "thorns", "rays"]
+    "emotion": [
+        "comforting",
+        "ominous",
+        "familiar",
+        "revered",
+        "frightening",
+        "maddening",
+        "confusing",
+        "perplexing",
+        "unknown"
+    ],
+    "group": [
+        "government",
+        "army",
+        "faction",
+        "gang",
+        "rebels",
+        "cult",
+        "merchants",
+        "traders",
+        "monsters",
+        "travelers",
+        "religion"
+    ],
+    "shape" : [
+        "circle",
+        "square",
+        "triangle",
+        "octagon",
+        "hexagon",
+        "diamond",
+        "star",
+        "heart",
+        "pentagon",
+        "crescent",
+        "semi circle",
+        "ring",
+        "oval"
+    ],
+    "action": [
+        "covered with",
+        "dotted with",
+        "surrounded by",
+        "featuring",
+        "crossed by",
+        "obscuring",
+        "overlayed with",
+        "adorned by"
+    ],
+    "quantity": [
+        "several",
+        "two",
+        "a few",
+        "dozens of",
+        "hundreds of",
+        "thousands of",
+        "an unreasonable amount of"
+    ],
+    "features": [
+        "wings",
+        "bones",
+        "crosses",
+        "thorns",
+        "rays",
+        "birds",
+        "arrows",
+        "hand prints",
+        "stripes",
+        "eyes",
+        "animals",
+        "runes",
+        "strange symbols"
+    ]
 }
