@@ -16,6 +16,7 @@ import markings from './json/markings.json'
 import sigils from './json/sigil.json'
 
 // Images
+import SVGsoon from './images/soon.svg'
 import SVGcontainer from './images/container.svg'
 import SVGhuman from './images/human.svg'
 import SVGdecoration from './images/decoration.svg'
@@ -41,6 +42,7 @@ type Images = {
   building: any
   markings: any
   sigils: any
+  soon: any
 }
 
 function App() {
@@ -61,7 +63,8 @@ function App() {
     decoration: SVGdecoration,
     building: SVGbuilding,
     markings: SVGmarkings,
-    sigils: SVGsigil
+    sigils: SVGsigil,
+    soon: SVGsoon
   }
 
   const [modalOpen, setModalOpen] = useState(false)
@@ -81,6 +84,7 @@ function App() {
       }
       <header>
         <h1>Unassumingly Significant</h1>
+        <p>a collection of simple RPG generators providing interest and inspiration to everyday objects</p>
       </header>
       <ButtonGrid options={options} images={images} onClick={openSpecificModal}/>
     </div>

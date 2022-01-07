@@ -4,5 +4,6 @@
     { "name": "Decoration" },
     { "name": "Building" },
     { "name": "Markings" },
-    { "name": "Sigils" }
+    { "name": "Sigils" },
+    { "name": "Corpse"}
 ]
